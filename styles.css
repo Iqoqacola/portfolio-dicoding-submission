@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 50px;
+}
+
+body{
+    background: #FAEED1;
+    font-size: 18px;
+    color: rgb(31, 29, 29);
+    font-family: 'Teko',Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* HEADER */
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background: red; */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: black solid 2px;
+    background: #FAEED1;
+    z-index: 999;
+
+}
+
+.header h2{
+    /* background-color: blue; */
+    text-shadow: 0.8px 0.8px white;
+
+}
+
+.navbar a{
+    margin: 15px;
+    /* background-color: blue; */
+    width: 50px;
+    font-size: 1.3em;
+    color: rgb(255, 0, 0);
+    text-shadow: 0.8px 0.8px rgb(0, 0, 0);
+}
+
+nav.navbar ul a li{
+    list-style: none;
+    display: inline-block
+}
+
+/* MAIN_CONTENT */
+.main{
+    /* border: black solid 2px; */
+    margin-top: 60px;
+    /* display: flex; */
+}
+
+section.home{
+    display: flex;
+}
+
+/* CONTENT */
+article.content{
+    /* background-color: green; */
+    width: 70%;
+    display: flex;
+    /* background-color: blue; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+article{
+    /* background-color: green; */
+    /* height: 100px; */
+    /* border: 2px solid white; */
+    margin-top: 5px;
+}
+
+article h2.name{
+    font-size: 45px;
+}
+
+article.information_2{
+    width: 90%
+}
+
+article.information_2 p,article.information_2 h3,article.information_2 ul {
+    text-align: left;
+    font-family: arial;
+    font-size: 0.8em;
+    margin-top: 8px;
+}
+
+article.information_2 ul {
+    margin-left: 25px;
+}
+
+
+/* ASIDE */
+.aside{
+    /* background-color: red; */
+    width: 30%;
+    /* height: 200px; */
+}
+
+div.polroid{
+    height: 50%;
+}
+
+.profile{
+    max-width: 100%;
+    width: 90%;
+    height: 90%;
+    height: auto;
+    /* opacity: 0.8; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 2px solid rgb(63, 62, 62);
+    box-shadow: 3px 3px #4b4a4a;
+
+}
+
+/* PRODUCT */
+section.product{
+    box-sizing: border-box;
+    width: 100%;
+    /* height: 100px;
+    background-color: green; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 35px;
+    background-color: #DED0B6;
+}
+
+div.card{
+    background: linear-gradient(to right bottom, #607274, #B2A59B);
+    border-radius: 25px;
+    width: 250px;
+    height: 375px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 25px;
+    box-shadow: 4px 4px 4px #607274;
+    transition: transform 0.2s ease-in-out;
+}
+
+div.circle{
+    box-shadow: 2px 1px 2px #FAEED1;
+    width: 150px;
+    height: 150px;
+    /* background-color: red; */
+    border-radius: 100%;
+    border: 2px solid #607274;
+    background-image: url('basic.jpeg');
+    background-size: 150px;
+    background-repeat: no-repeat;
+}
+
+div.paragrafh{
+    background-color: #FAEED1;
+    width: 200px;
+    height:50px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.p2{
+    height: 100px;
+    border-radius: 20px;
+}
+
+div.p1>h4{
+
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+/* ABOUT ME */
+.contact-section{
+    width: 100%;
+    height: calc(90vh - 50px);
+    /* background-color: red; */
+    grid-area: contact;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(208, 212, 216); */
+    flex-direction: column;
+
+}
+
+.contact-header{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    /* background-color: blue; */
+    margin: 0 auto;
+}
+
+.contact-header h2{
+    /* letter-spacing: 2px;  */
+    padding: 4px;
+    /* background-color: blue; */
+    margin: 2px;
+    text-transform: uppercase;
+}
+
+.contact-header p{
+    padding: 4px;
+    font-size: 0.8em;
+    /* background-color: blue;; */
+    font-style: italic;
+}
+
+.contact-link{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    /* background-color: blue; */
+    width: auto-fit;
+    margin: 2% auto;
+    /* height: 100px; */
+    /* display: grid;
+    grid-template-columns: repeat(5, minmax(100px, max-content)); */
+}
+.contact-link a{
+    margin: 12px 12px;
+    /* background-color: red; */
+    /* animation: hover-contact; */
+    /* grid-column: 1 / 5; */
+    /* grid-row: 1 / -1; */
+    /* background-color: red; */
+    text-shadow: 0.5px 0.5px 0.5px rgb(0, 0, 0);
+}
+
+.contact-detail {
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.contact-detail:hover {
+    /* color: pink; */
+    transform: translateY(8px);
+    color: rgb(185, 57, 78);
+}
+
+    /* CONTACT END */
+
+    /* FOOTER START */
+
+    .footer{
+        width: 100%;
+        height: 10vh;
+        /* background: green; */
+        border-top: 2px solid black;
+        grid-area: footer;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    
+    .footer p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8em;
+        margin-right: 35px;
+    }
+        /* FOOTER END */
+
+
+/* RESPONSIVE */
+@media (max-width: 652px) {
+    .navbar{
+        display: none;
+    }
+
+    .contact-section{
+        height: 90vh;
+    }
+    .contact-link{
+        width: 80%
+    }
+    .contact-link a{
+        /* grid-column: 1 / -1;
+        margin-bottom: 10px;
+        justify-items: center; */
+    }
+}
+
+
+@media (max-width: 801px){
+    .aside{
+        display: none;
+    
+    }
+    div.content{
+        width: 100%;
+    }
+}
+
+@media(max-width: 888px){
+    section.product{
+        flex-direction: column;
+        align-items: center;
+    }
+    div.card{
+        margin-top: 30px
+    }
+}
